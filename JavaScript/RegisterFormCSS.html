@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-image: url(ackgroungimage.jfif);
+        text-align: center;
+        color: blue;
+        font-size: 15px;
+        font-family: georgia;
+        background-color: lightskyblue;
+    }
+
+    a {
+        color: red;
+        text-decoration: none;
+    }
+
+    table {
+        width: 350px;
+        margin: 10px auto;
+        font-family:georgia;
+    }
+
+    h2 {
+        color: yellow;
+        font-size: 20px;
+        margin-bottom: -5px;
+        
+    }
+
+    input[type="text"],
+    [type="date"],
+    [type="password"],
+    [type="email"],
+    [type="number"] {
+        width: 100%;
+        height: 35px;
+        text-align: center;
+        font-size: 15px;
+        margin-top: 5px;
+        padding: 5px;
+        border: 2px solid green;
+        border-radius: 5px;
+    }
+
+    input[type="radio"] {
+        width: 5%;
+        height: 10px;
+        font-size: 10px;
+        margin-top: 5px;
+        padding: 10px;
+    }
+
+    input[type="submit"] {
+        background-color: yellowgreen;
+        border: 2px solid white;
+        font-family: Verdana;
+        font-weight: bold;
+        color: green;
+        width: 250px;
+        height: 25px;
+        margin-top: 2px;
+        padding: 2px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    input:hover {
+        background-color: orange;
+        color: black;
+    }
+
+    select {
+        width: 104%;
+        height: 45px;
+        text-align: center;
+        font-size: 15px;
+        margin-top: 5px;
+        padding: 5px;
+        border: 2px solid green;
+        border-radius: 5px;
+        font-size: 16px;
+        
+    
+
+
+    }
+
+    select:hover {
+        background-color: orange;
+        color: aliceblue;
+        cursor: pointer;
+    }
+
+    select:focus {
+    
+        border: 3px solid blue;
+        outline: none;
+    }
+
+    input[type="submit"]:hover {
+        background-color: fuchsia;
+        color: black;
+    }
+
+    .name {
+        background-image: url(userimage.jfif);
+        background-position: 5px 5px;
+        background-repeat: no-repeat;
+        background-size: 30px 30px;
+    }
+
+    .email {
+        background-image: url(email.png);
+        background-position: 5px 5px;
+        background-repeat: no-repeat;
+        background-size: 30px 30px;
+    }
+
+    .mobile {
+        background-image: url(mobile.png);
+        background-position: 5px 5px;
+        background-repeat: no-repeat;
+        background-size: 30px 30px;
+    }
+
+    .password {
+        background-image: url(password.png);
+        background-position: 5px 5px;
+        background-repeat: no-repeat;
+        background-size: 30px 30px;
+    }
+
+    .country { 
+        margin: 10px auto;
+        font-family: georgia;
+
+
+    }
+</style>
+
+
+<body>
+    <h2> Registration Form </h2>
+    <form action="#" method="post">
+        <table>
+            <tr>
+                <td>
+                    <select class="country">
+                        <option value="select your country">select your country</option>
+                        <option value="India">India</option>
+                        <option value="USA">USA</option>
+                        <option value="Australia">Australia</option>
+                        <option value="Newyork">Newyork</option>
+
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="text" placeholder=" Your FirstName" class="name">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="text" placeholder=" Your LastName" class="name">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="text" placeholder=" Your Email Id" class="email">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="number" placeholder=" Your Mobile Number" class="mobile">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="date" class="dob">
+                </td>
+            </tr>
+            <tr>
+                <td> Gender :
+                    <input type="radio" name="gender" value="Male" checked>Male
+                    <input type="radio" name=" gender" value="Female">Female
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="password" name="pass1" placeholder="Enter Your Password" class="password">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="password" name="pass2" placeholder=" Confirm Your Password" class="password">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" name="register" value="register" >
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    Already Registered? <a href="#">Login Here</a>
+
+</body>
+
+</html>

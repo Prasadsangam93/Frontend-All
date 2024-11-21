@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascipt">
+        function myPolice(){
+
+       if (document.myform.mybox.checked) 
+       ("hey it is checked");
+       else{
+       document.write("hey it is unchecked");
+    
+        }
+    </script>
+    <form name="myform">
+        <input type="checkbox" name="mybox"/>
+        <input type="button" value="Click me"  onclick="myPolice()"/>
+
+    </form>
+    
+</body>
+</html>

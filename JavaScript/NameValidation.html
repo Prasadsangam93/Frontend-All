@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name validation</title>
+</head>
+<body>
+    <h2> Name validation</h2>
+    <form  name="myform" method="post" onsubmit="return validname()" action="Success.html">
+        Your Name: <input type="text" name="name1" pattern="[A-Za-c ]{3,}" title="name must be alphabets"> <br><br>
+        <input type="submit" value="Click Here"> 
+    </form>
+    
+    <script type="text/javascript">
+        function validname(){
+            var name=document.myform.name1.value;
+
+            if(name=="null" || name==""){
+                alert("please provide correct name");
+                return false;
+            }
+
+        }
+        
+
+    </script>
+
+    
+</body>
+</html>

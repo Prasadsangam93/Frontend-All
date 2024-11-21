@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="first">
+    <p> this is first paragraph division 1 </p>
+    <p> this is first paragraph1 division 1  </p>
+</div>
+<div id="second">
+    <p> 
+        this is second parapraph1 division 2
+        
+    </p>
+    <p id="last"> 
+        this is second paragraph2 division 2
+</p>
+
+</div>
+<script>
+   var n =  document.createElement('p')
+  n.innerText="this is special tag "
+    var parent=document.getElementById("second")
+    var last=document.getElementById("last")
+    parent.insertBefore(n,last)
+
+</script>
+    
+</body>
+</html>

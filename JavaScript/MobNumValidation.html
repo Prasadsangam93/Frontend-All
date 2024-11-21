@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <h3> mobile number validation</h3>
+    
+        <form action="Success.html" name="myform" method="post" onsubmit="return mobilevalid()">
+            Enter Your Mobile Number<input type="number" name=mobile1 > <br><br>
+            <input type="submit" value="Submit">
+        </form>
+        <script type="text/javascript">
+            function mobilevalid(){
+                var mobile2=document.myform.mobile1.value;
+                if(mobile2.length==10){
+                    return true;
+                }else{
+                    alert("enter 10 digit  valid number");
+                    return false;
+                }
+            }
+        </script>
+    </center>
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr= [1,52,23,84,5,]
+      var max = arr.reduce((acc,ele,index,arr)=>{
+            if(acc>ele){
+                return acc
+            }
+            else{
+                return ele
+            }
+
+
+        },arr[0])
+        console.log(max)
+
+        
+    </script>
+    
+</body>
+</html>

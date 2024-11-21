@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validtion</title>
+</head>
+<body >
+    <form  action="processor.html" method=" get" id="frmStudentRegistration" name="frmStudentRegistration" onsubmit="return validate()">
+        <label for="txtStudentName">Student Name :</label> <br/>
+        <input type="text" value="" placeholder="Enter Your Name" id="txtStudentName" name="txtStudentName"/>
+              <span id="spnIsStudentNameValid"></span><br> <br>
+
+              <label>Password :</label><br>
+              <input type="password" value="" placeholder="Enter your password" id="pwdStudent" name="pwdStudent"/>
+              <span id="spnIsStudentPasswordValid"></span><br/><br/>
+
+        <input type="submit" value="SUBMIT"/>
+        <input type="reset" value="RESET"/>
+    </form>
+    <script type="text/javascript">
+        
+        function validate()
+        {
+        var isStudentNameValid=true;
+        var isStudentPasswordValid=true;
+
+      if( document.getElementById("txtStudentName").value == "")
+      
+      {
+        isStudentNameValid=false;
+        document.getElementById("spnIsStudentNameValid").innerHTML="&#x2716;place enter your name.";
+        document.getElementById("spnIsStudentNameValid").style.color="red";
+      }
+      else
+      {
+        isStudentNameValid=true;
+        document.getElementById("spnIsStudentNameValid").innerHTML="&#2714; Valid";
+        document.getElementById("spnIsStudentNameValid").style.color="green";
+
+      }
+      if(document.getElementById("pwdStudent").value =="" )
+      {
+        isStudentPasswordValid=false;
+        document.getElementById("spnIsStudentPasswordValid").innerHTML="&#x2716;place enter your password.";
+         document.getElementById("spnIsStudentPasswordValid").style.color="red";
+      }
+      else{
+        isStudentPasswordValid = true;
+        document.getElementById("spnIsStudentPasswordValid").innerHTML="&#x2714; Valid";
+        document.getElementById("spnIsStudentPasswordValid").style.color="green";
+      }
+      
+      if(isStudentNameValid ==false || isStudentPasswordValid==false)
+      {
+        return false;
+      }
+      else
+      {
+
+        return true;
+      }
+    
+    }
+        function resetForm(){
+          document.getElementById("spnIsStudentNameValid").innerHTML="";
+          document.getElementById("spnIsStudentPasswordValid").innerHTML="";
+
+        }
+        
+    </script>
+    
+</body>
+</html>

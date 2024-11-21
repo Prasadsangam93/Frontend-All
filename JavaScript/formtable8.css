@@ -1,0 +1,24 @@
+body{
+    background-color: orange;
+    text-align: center;
+}
+    table { 
+        display: flex;
+        background-color: rgb(92, 0, 128);
+        border: 2px solid white; 
+        justify-content: center;
+        padding: 20px;
+ }
+ tr{
+    background-color: green;
+    
+ }
+ td{
+    padding: 15px;
+    
+ }
+ form{
+    margin:50px ;
+    
+ }
+

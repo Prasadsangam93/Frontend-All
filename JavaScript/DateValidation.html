@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <h3> date validation</h3>
+    <form action="Success.html" name="myform" method="post" onsubmit="return validdate()">
+        Enter Your Dob<input type="date" name="date1" required><br><br>
+        <input type="submit" value="save Here">
+    </form>
+    <script type="text/javascript">
+    function validdate(){
+        var curdate=new Date();
+        var dob2=new Date(document.myform.date1.value);
+        if(dob2 > curdate){
+            alert("please enter valid dob");
+            return false;
+        }        
+
+
+    }
+</script>
+
+</center>
+    
+</body>
+</html>

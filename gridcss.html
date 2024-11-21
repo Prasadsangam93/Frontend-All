@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            height:90vh;
+            grid-template-columns: 10% 80% 10%;
+            grid-template-rows: 10% 80%  10%;
+        }
+        .header{
+            background-color: rgb(255, 127, 127);
+            grid-row: 1/2;
+            grid-column: 1/4;
+        }
+        .side-nav{
+        background-color: rgb(240, 127, 255);
+        
+        }
+        .content{
+            background-color: rgb(127, 255, 180);
+         
+        }
+        .aside{
+            background-color: rgb(127, 161, 255)
+        }
+        .footer{
+            background-color: rgb(255, 240, 240);
+            grid-column: 1/4;
+            
+            
+        }
+        .container>div{
+            font-size: 20px;
+            color: red;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <di class="container">
+        <div class="header">Header</div>
+        <div class="side-nav">sidenav</div>
+        <div class="content">content</div>
+        <div class="aside">Aside</div>
+        <div class="footer">Footer</div>
+    </di>
+    
+</body>
+</html>

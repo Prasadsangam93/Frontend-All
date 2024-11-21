@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    height: 100vh;
+    background-color:lightpink;
+    margin-top: 100px;
+    
+
+}
+.aboveForm{
+    display: flex;
+    justify-content: center;
+    background-color: green;
+    border: 2px solid black;
+    margin: 300px;
+
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
+
+
+    
+}
+h3{
+    text-align: center; color: green ; 
+    background-color: rgb(255, 255, 222);
+    border: 1px solid black;
+    margin: 300px;
+    padding: 1px ;
+    margin-bottom: -300px;
+}
